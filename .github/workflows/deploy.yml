@@ -15,7 +15,7 @@ key: ${{ secrets.EC2_SSH_KEY }}
 script: |
 cd /home/ubuntu
 if [ ! -d "devops-notes-app" ]; then
-git clone YOUR_REPO_URL
+git clone https://github.com/rashmibulbule/cicddev
 fi
 cd devops-notes-app
 git pull origin main
